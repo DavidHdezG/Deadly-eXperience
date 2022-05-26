@@ -67,6 +67,13 @@
             <systemPath>${project.basedir}/lib/sound.jar</systemPath>
         </dependency>
         <dependency>
+            <groupId>com.formdev.flatlaf</groupId>
+            <artifactId>flatlaf-1.5</artifactId>
+            <version>1.5</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/flatlaf-1.5.jar</systemPath>
+        </dependency>
+        <dependency>
             <groupId>uibooster</groupId>
             <artifactId>UiBooster</artifactId>
             <version>1.0</version>
