@@ -38,7 +38,6 @@ public class Game extends PApplet {
     Avatar avatar;
     boolean hitted = false;
     int menu = 0;
-    boolean scoreWindow=false;
     ArrayList<Float> kills;
     ArrayList<Double> killTimeAvrg;
     ArrayList<Double> accuracyAvrg;
@@ -210,17 +209,17 @@ public class Game extends PApplet {
                    } else {
                        new UiBooster().showInfoDialog(aux);
                    }
-                   scoreWindow=true;
+
 
             } catch (ExecutionException | InterruptedException e) {
                 System.out.println(e.getMessage());
             }
         }
-        if (!scoreWindow&&menu == 0 && mouseX > width / 2 - 600 && mouseX < width / 2 + 600 && mouseY > height / 2 + 150 && mouseY < height / 2 + 450) {
+        if (menu == 0 && mouseX > width / 2 - 600 && mouseX < width / 2 + 600 && mouseY > height / 2 + 150 && mouseY < height / 2 + 450) {
 
             exit();
         }
-        scoreWindow=true;
+
     }
 
     void menuScreen() {
